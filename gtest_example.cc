@@ -1,11 +1,10 @@
 #include <gtest/gtest.h>
 #include <iostream>
-
-namespace conan {
-	void interface() {
-		std::cout << "Calling Interface" << std::endl;
-	}	
-}
+#include "./interface.h"
+	
+void conan::interface() {
+	std::cout << "Calling Interface" << std::endl;
+}	
 
 TEST(TEST_EXAMPLE, should_return_true) {
 	EXPECT_EQ(1, 1);
