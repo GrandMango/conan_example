@@ -8,7 +8,7 @@ class DependencyConan(ConanFile):
     author = "GrandMango test@test.com"
     url = ""
     description = ""
-    requires = [("interface/1.0")]
+    requires = [("interface/1.0@test/test")]
     topics = ("gtest")
     settings = "os", "compiler", "build_type", "arch"
     options = {"shared": [True, False]}

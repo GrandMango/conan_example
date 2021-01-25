@@ -1,8 +1,8 @@
 #ifndef INTERFACE
 #define INTERFACE
 
-namespace conan {
-	void interface_A();
+namespace conan_b {
+	void interface_B();
 }
 
 #endif 

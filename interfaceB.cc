@@ -2,7 +2,7 @@
 #include "./interface_b.h"
 #include "interface.h"
 
-void conan::interface_B() {
+void conan_b::interface_B() {
 	std::cout << "Calling Interface B" << std::endl;
 	conan::interface_A();
 }	
