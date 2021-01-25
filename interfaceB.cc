@@ -1,8 +1,10 @@
 #include <iostream>
-#include "./interface.h"
-	
-void conan::interface_A() {
-	std::cout << "Calling Interface A" << std::endl;
+#include "./interface_b.h"
+#include "interface.h"
+
+void conan::interface_B() {
+	std::cout << "Calling Interface B" << std::endl;
+	conan::interface_A();
 }	
 
 /*

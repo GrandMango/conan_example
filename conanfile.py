@@ -2,12 +2,13 @@ from conans import ConanFile, CMake, tools
 
 
 class DependencyConan(ConanFile):
-    name = "interface"
-    version = "1.0"
+    name = "InterfaceB"
+    version = "q.0"
     license = "MIT"
     author = "GrandMango test@test.com"
     url = ""
     description = ""
+    requires = [("interface/1.0")]
     topics = ("gtest")
     settings = "os", "compiler", "build_type", "arch"
     options = {"shared": [True, False]}
@@ -15,7 +16,7 @@ class DependencyConan(ConanFile):
     generators = "cmake"
 
     def source(self):
-        self.run("git clone -b dependency_pass https://github.com/GrandMango/conan_example.git")
+        self.run("git clone -b dependency_pass_2 https://github.com/GrandMango/conan_example.git")
 
     def build(self):
         cmake = CMake(self)
@@ -39,4 +40,4 @@ class DependencyConan(ConanFile):
         self.copy("*.a", dst="lib", keep_path=False)
 
     def package_info(self):
-        self.cpp_info.libs = ["InterfaceA"]
+        self.cpp_info.libs = ["InterfaceB"]
