@@ -1,5 +1,5 @@
-#ifndef INTERFACE
-#define INTERFACE
+#ifndef INTERFACE_B
+#define INTERFACE_B
 
 namespace conan_b {
 	void interface_B();

@@ -7,5 +7,7 @@ conan_basic_setup()
 #find_package(interface)
 
 add_library(InterfaceB interfaceB.cc)
-
-target_link_libraries(InterfaceB interface)
+message("@@@@@@@@@@@@@@@@")
+message(${CONAN_LIBS})
+message("@@@@@@@@@@@@@@@@")
+target_link_libraries(InterfaceB ${CONAN_LIBS})
