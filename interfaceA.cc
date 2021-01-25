@@ -1,14 +1,9 @@
-#include <gtest/gtest.h>
 #include <iostream>
 #include "./interface.h"
 	
-void conan::interface() {
-	std::cout << "Calling Interface" << std::endl;
+void conan::interface_A() {
+	std::cout << "Calling Interface A" << std::endl;
 }	
-
-TEST(TEST_EXAMPLE, should_return_true) {
-	EXPECT_EQ(1, 1);
-}
 
 /*
 int main(int argc, char *argv[]) {

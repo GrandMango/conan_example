@@ -2,7 +2,7 @@
 #define INTERFACE
 
 namespace conan {
-	void interface();
+	void interface_A();
 }
 
 #endif 
