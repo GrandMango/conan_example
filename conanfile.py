@@ -2,7 +2,7 @@ from conans import ConanFile, CMake, tools
 
 
 class DependencyConan(ConanFile):
-    name = "interface"
+    name = "interfaceA"
     version = "1.0"
     license = "MIT"
     author = "GrandMango test@test.com"
