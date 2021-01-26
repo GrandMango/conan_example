@@ -8,4 +8,6 @@ $ cmake ..
 $ make
 ```
 
-**About package dependency test: See more in dependency_pass_final branch**
+# About package dependency test
+
+See more in dependency_pass_final branch
