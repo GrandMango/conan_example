@@ -1,7 +1,7 @@
 # How to build
 **Step1**
 
-checkout dependency_pass branch code, run `conan create . test/test`
+checkout dependency_pass_1 branch code, run `conan create . test/test`
 
 **Step2**
 
