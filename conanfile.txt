@@ -1,5 +1,5 @@
 [requires]
-interface/1.0@test/test
+interfaceA/1.0@test/test
 
 [generators]
 cmake

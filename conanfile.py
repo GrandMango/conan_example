@@ -3,12 +3,12 @@ from conans import ConanFile, CMake, tools
 
 class DependencyConan(ConanFile):
     name = "InterfaceB"
-    version = "q.0"
+    version = "1.0"
     license = "MIT"
     author = "GrandMango test@test.com"
     url = ""
     description = ""
-    requires = [("interface/1.0@test/test")]
+    requires = [("interfaceA/1.0@test/test")]
     topics = ("gtest")
     settings = "os", "compiler", "build_type", "arch"
     options = {"shared": [True, False]}
